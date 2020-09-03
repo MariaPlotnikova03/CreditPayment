@@ -5,7 +5,6 @@ public class CreditPaymentService {
         double x1 = i + 1;
         double periodInMonths = periodInYears * 12;
         double payment = amountOfTheCredit * ((i * Math.pow(x1, periodInMonths)) / (Math.pow(x1, periodInMonths) - 1));
-        int paymentRounded = (int)payment;
-        return paymentRounded;
+        return payment;
     }
 }

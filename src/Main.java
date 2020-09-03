@@ -5,6 +5,6 @@ public class Main {
         double percent = 9.99;
         int periodInYears = 1;
         double payment = service.calculate(amountOfTheCredit, percent, periodInYears);
-        System.out.println("Ежемесячный платёж " + payment + " руб.");
+        System.out.printf( "%.0f", payment);
     }
 }
